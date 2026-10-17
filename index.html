@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="A little less lost. Save links, videos and inspiration to Haven on Android, with a browser extension for the things you find on your computer.">
+  <meta name="theme-color" content="#f8f7f3">
+  <meta name="color-scheme" content="light">
+  <title>Haven — Good finds. A place to keep them.</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/dm-regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header shell">
+    <a class="wordmark" href="#" aria-label="Haven home">haven.</a>
+    <nav aria-label="Main navigation"><a href="#the-app">The app</a><a href="#from-the-web">The extension</a><a href="#questions">Questions</a></nav>
+    <a class="button small" href="#get-haven">Get Haven <span aria-hidden="true">↗</span></a>
+  </header>
+  <main id="main">
+    <section class="hero shell" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> A LITTLE LESS LOST.</p>
+        <h1 id="hero-title">Good finds.<br>A place to<br><em>keep them.</em></h1>
+        <p class="lede">The video for later. The art that stays with you. The page you don’t want to lose.<br>Bring them home to Haven.</p>
+        <div class="hero-actions"><a class="button" href="#get-haven">Find your Haven <span aria-hidden="true">↗</span></a><a class="text-link" href="#the-app">Take a look inside <span aria-hidden="true">↓</span></a></div>
+        <p class="availability">Haven for Android<br>Haven for Chrome</p>
+      </div>
+      <div class="hero-art" aria-label="Three real Haven Android interface views with a sample library">
+        <div class="orbit-word">a place for<br><em>your kind of interesting.</em></div>
+        <figure class="phone hero-phone hero-back"><img src="assets/search-dark-3x.jpg" alt="Actual Haven dark search screen, showing art-related saves" width="412" height="892"></figure>
+        <figure class="phone hero-phone hero-front"><img src="assets/library-dark-3x.jpg" alt="Actual Haven Library in dark mode, with saves from YouTube and Pinterest" width="412" height="892" fetchpriority="high"></figure>
+        <figure class="phone hero-phone hero-detail"><img src="assets/favourites-dark-3x.jpg" alt="Actual Haven Favourites screen in dark mode" width="412" height="892"></figure>
+        <span class="hand-note">On your phone.<br>Not another feed. <span aria-hidden="true">↗</span></span>
+      </div>
+    </section>
+    <div class="proof-note shell">Real Haven interface · Android 1.0.166 · source-rendered with sample saves, not a live device recording.</div>
+    <section class="platform-strip shell" aria-label="Examples of links saved to Haven"><span>Different corners of the internet.<br><strong>One place to return to.</strong></span><div><span class="platform youtube"><img class="brand-logo" src="assets/youtube-logo.svg" alt="" width="27" height="27"> <b>YouTube</b></span><span class="platform pinterest"><img class="brand-logo" src="assets/pinterest-logo.svg" alt="" width="27" height="27"> <b>Pinterest</b></span><span class="platform instagram"><img class="brand-logo" src="assets/instagram-logo.svg" alt="" width="27" height="27"> <b>Instagram</b></span><span class="platform web"><img class="brand-logo" src="assets/internet.svg" alt="" width="27" height="27"> <b>Anywhere on the internet</b></span></div></section>
+
+    <section id="the-app" class="app-section shell" aria-labelledby="app-title">
+      <div class="section-heading"><p class="eyebrow">THIS IS HAVEN. ON ANDROID.</p><h2 id="app-title">Your internet.<br><em>A little more yours.</em></h2><p>Not scattered across apps. Not buried in a chat with yourself.<br>A visual library of the things you chose to keep.</p></div>
+      <div class="app-tour">
+        <div class="tour-stage">
+          <span class="stage-label" id="screen-label">01 / YOUR LIBRARY</span>
+          <button class="screen-open" type="button" aria-label="Enlarge the current Haven screen"><span class="phone tour-phone"><img id="tour-image" src="assets/library-dark-3x.jpg" alt="Haven Library, dark appearance, with sample saves" width="412" height="892" loading="lazy"></span><span class="enlarge-label">View in detail <span aria-hidden="true">↗</span></span></button>
+          <p class="screen-appearance-note">Haven · Dark appearance</p>
+        </div>
+        <div class="tour-copy">
+          <p class="eyebrow">A LOOK INSIDE, NOT A MOCK-UP</p>
+          <h3>Made for finding<br>that feeling <em>again.</em></h3>
+          <div class="screen-choices" aria-label="Choose an actual Haven screen">
+            <button type="button" data-screen="library" aria-pressed="true"><span>01</span><div><strong>See what caught your eye.</strong><p>Cards keep the image, source and context together.</p></div><b aria-hidden="true">↗</b></button>
+            <button type="button" data-screen="search" aria-pressed="false"><span>02</span><div><strong>Find the thread again.</strong><p>Search your saved titles, creators, tags and categories.</p></div><b aria-hidden="true">↗</b></button>
+            <button type="button" data-screen="favourites" aria-pressed="false"><span>03</span><div><strong>Keep the keepers close.</strong><p>A smaller corner for your favourite finds.</p></div><b aria-hidden="true">↗</b></button>
+            <button type="button" data-screen="calendar" aria-pressed="false"><span>04</span><div><strong>Remember when you saved it?</strong><p>Return to a day through the Calendar.</p></div><b aria-hidden="true">↗</b></button>
+            <button type="button" data-screen="instagram" aria-pressed="false"><span>05</span><div><strong>Follow a familiar source.</strong><p>Filter your library by platform. Here, The Met on Instagram.</p></div><b aria-hidden="true">↗</b></button>
+          </div>
+          <p class="quiet" id="screen-caption" aria-live="polite">Library · actual app layout, sample collection. Tap the phone to inspect it.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="from-the-web" class="browser-section" aria-labelledby="browser-title">
+      <div class="shell">
+        <div class="browser-heading"><div><p class="eyebrow">THE BROWSER COMPANION</p><h2 id="browser-title">Found on the web.<br>Kept <em>on your phone.</em></h2></div><p>Haven lives on Android. The extension is the bridge from your computer—not a desktop version of your library.</p></div>
+        <div class="source-buttons" aria-label="Choose a real source page"><button type="button" data-source="youtube" aria-pressed="true"><img class="brand-logo" src="assets/youtube-logo.svg" alt="" width="18" height="18">YouTube</button><button type="button" data-source="pinterest" aria-pressed="false"><img class="brand-logo" src="assets/pinterest-logo.svg" alt="" width="18" height="18">Pinterest</button><button type="button" data-source="instagram" aria-pressed="false"><img class="brand-logo monochrome" src="assets/instagram-logo.svg" alt="" width="18" height="18">Instagram</button><button type="button" data-source="web" aria-pressed="false"><img class="brand-logo monochrome" src="assets/internet.svg" alt="" width="18" height="18">Anywhere on the internet</button></div>
+        <div class="browser-demo">
+          <div class="source-wrap">
+            <div class="source-window"><div class="window-bar"><span class="window-dots" aria-hidden="true">● ● ●</span><span id="source-url">youtube.com/watch?v=nr5Pj6GQL2o</span><span aria-hidden="true">↗</span></div><div class="source-image-wrap"><img id="source-image" src="assets/youtube-source.jpg" alt="Cropped real YouTube page for NASA Goddard’s Tour of the Moon in 4K" width="904" height="660" loading="lazy"></div></div>
+            <div class="source-caption"><div><span class="eyebrow" id="source-kind">REAL YOUTUBE PAGE</span><h3 id="source-title">A small trip to the Moon.</h3><p id="source-description">NASA Goddard’s “Tour of the Moon in 4K”. The same verified video link appears in the sample Haven library.</p></div><a id="source-link" href="https://www.youtube.com/watch?v=nr5Pj6GQL2o" target="_blank" rel="noopener noreferrer">Open original ↗</a></div>
+          </div>
+          <figure class="extension-frame"><figcaption><span class="status-dot"></span> HAVEN CHROME EXTENSION <span>↙</span></figcaption><img src="assets/extension-popup.jpg" alt="Haven’s actual extension popup showing Connect your phone and Save this page, in its unpaired state" width="390" height="590" loading="lazy"><p>Actual popup · unpaired state</p></figure>
+        </div>
+        <div class="workflow"><article><span>01</span><h3>Pair once.</h3><p>On the same trusted Wi-Fi, use Haven’s Connected devices settings to scan the extension’s pairing QR.</p></article><article><span>02</span><h3>Save the good bit.</h3><p>Use “Save this page”. For a specific post in a feed, right-click its link and choose “Save to Haven”.</p></article><article><span>03</span><h3>Return on your phone.</h3><p>The link joins your Haven library. If the phone is away, the extension keeps a queue for delivery later.</p></article></div>
+        <p class="demo-note">Illustrated workflow, not a live connection. Source pages are real cropped captures; Haven screens use an isolated sample library. Preview availability depends on the original platform.</p>
+      </div>
+    </section>
+
+    <section class="return-section shell" aria-labelledby="return-title">
+      <div class="return-art"><div class="art-sheet"><img src="assets/great-wave.jpg" width="1200" height="800" loading="lazy" alt="Hokusai’s The Great Wave, public-domain artwork from The Met"><p>KATSUSHIKA HOKUSAI · THE GREAT WAVE · CA. 1830–32</p></div><div class="little-tag">worth coming back to.</div></div>
+      <div><p class="eyebrow">LESS COLLECTING. MORE RETURNING.</p><h2 id="return-title">Some things<br>deserve <em>another look.</em></h2><p class="lede">You don’t need to turn every good find into a project. Sometimes you just need to know where it is.</p><p>Keep the link. Remember the image. Come back when you have the time.</p><a class="text-link" href="#the-app">Explore the actual app screens ↑</a></div>
+    </section>
+    <section class="principles shell" aria-label="How Haven is designed"><article><span aria-hidden="true">⌂</span><h3>A library on your device.</h3><p>Your saved library lives locally in Haven. Back it up from the app when you want a copy.</p></article><article><span aria-hidden="true">↗</span><h3>Connected to the original.</h3><p>Haven keeps links and available previews. Original posts, videos and pages still belong to their sources.</p></article><article><span aria-hidden="true">◌</span><h3>Your pace. Your choices.</h3><p>A place for what you deliberately save—not a promise to read, watch or finish everything.</p></article></section>
+
+    <section id="questions" class="faq shell" aria-labelledby="questions-title"><div><p class="eyebrow">A FEW THINGS, BEFORE YOU ASK</p><h2 id="questions-title">Make yourself<br><em>at home.</em></h2></div><div class="faq-list"><details><summary>Is there a Haven desktop or web app?<span>+</span></summary><p>No. Haven’s library is currently an Android app. The Chrome extension sends links from your computer to Haven on your phone. This website is a product introduction, not a web version of Haven.</p></details><details><summary>Are these actual Haven screens?<span>+</span></summary><p>Yes—the interface is rendered from the Android 1.0.166 source that matches the release bundle. The saves are a separate sample collection of real public links. These are source-rendered captures, not physical-device screenshots or a live transfer recording.</p></details><details><summary>Does Haven download every video or post?<span>+</span></summary><p>No. Saving a link does not promise an offline copy of the original content. Covers, embeds and original pages depend on the source’s availability and access requirements.</p></details><details><summary>How does the browser extension connect?<span>+</span></summary><p>Pair the extension with Haven on Android over the same trusted Wi-Fi. Link sharing is encrypted. Saves can stay queued on your computer while your phone is unavailable.</p></details><details><summary>Where does Haven work?<span>+</span></summary><p>Haven is an Android app with a Chrome browser companion. Your library lives on your phone; the extension sends the things you find on your computer to it over your trusted Wi-Fi.</p></details></div></section>
+
+    <section id="get-haven" class="get-section shell" aria-labelledby="get-title"><p class="eyebrow">A HOME FOR YOUR GOOD FINDS</p><h2 id="get-title">The internet is big.<br><em>Your Haven is yours.</em></h2><p>For your phone. With a little help from your browser.</p><div class="release-cards"><button type="button" class="release-card" data-release="android"><span class="release-icon">h.</span><span><strong>Haven for Android</strong><small>Your personal library</small></span><span aria-hidden="true">↗</span></button><button type="button" class="release-card" data-release="chrome"><span class="release-icon browser-icon">↗</span><span><strong>Haven for Chrome</strong><small>Save from your browser</small></span><span aria-hidden="true">↗</span></button></div><p class="release-note">Your phone. Your browser. One Haven.</p></section>
+  </main>
+  <footer class="shell"><div><a class="wordmark" href="#" aria-label="Haven home">haven.</a><p>A little less lost.</p></div><div class="footer-links"><a href="https://sites.google.com/view/haven-app-privacy-policy/home" target="_blank" rel="noopener noreferrer">App privacy</a><a href="https://sites.google.com/view/haven-extension-privacy-policy" target="_blank" rel="noopener noreferrer">Extension privacy</a><a href="mailto:havenbygokul@gmail.com">Say hello ↗</a><button type="button" id="credits-button">Screens & image credits</button></div><p class="legal">Independent of YouTube, Instagram, Pinterest, NASA and The Met. Names and marks identify the example sources; no affiliation or endorsement is implied.</p></footer>
+  <template id="android-system-bar"><span class="android-statusbar" aria-hidden="true"><span>9:41</span><svg viewBox="0 0 60 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M1 4.8a12 12 0 0 1 16 0l-8 8z"/><path d="M22 12 34 0v12z"/><rect x="41" y="2" width="16" height="10" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.2"/><rect x="43" y="4" width="10" height="6" rx=".4"/><path d="M58 5h2v4h-2z"/></svg></span></template>
+  <dialog id="detail-dialog" aria-labelledby="detail-title"><button type="button" class="dialog-close" aria-label="Close dialog">×</button><div id="dialog-content"></div></dialog>
+</body>
+</html>
